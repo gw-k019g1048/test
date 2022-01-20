@@ -1,0 +1,85 @@
+@use "responsive" as m;
+
+.loader {
+	transition: 0.3s;
+	z-index: 10000;
+	position: fixed;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	background-color: #e7eff2;
+	background-image: linear-gradient(-90deg, #f7f7f7 50%, transparent 50%);
+	background-size: 90px 90px;
+	background-position: center;
+	&-img {
+		width: 450px;
+		height: 450px;
+		margin: 5% auto 0;
+		background-image: url(../img/loading.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		@include m.tb {
+			width: 300px;
+			height: 300px;
+			margin-top: 20%;
+		}
+		@include m.sp {
+			width: 250px;
+			height: 250px;
+			margin-top: 25%;
+		}
+	}
+	&-sp {
+		clear: both;
+		width: 400px;
+		height: 10px;
+		margin: 10px auto 5%;
+		border: 2px #4d4d4d solid;
+		border-radius: 4px;
+		background: linear-gradient(
+			60deg,
+			transparent 0%,
+			transparent 50%,
+			#4d4d4d 50%,
+			#4d4d4d 75%,
+			transparent 75%,
+			transparent
+		);
+		background-size: 20px 30px;
+		background-position: 0px 0px;
+		animation: spLoadBar 0.8s infinite linear;
+		@include m.tb {
+			width: 250px;
+		}
+		@include m.sp {
+			width: 200px;
+		}
+	}
+	@keyframes spLoadBar {
+		from {
+			background-position: 0px 0px;
+		}
+		to {
+			background-position: 20px 0px;
+		}
+	}
+	@-webkit-keyframes spLoadBar {
+		from {
+			background-position: 0px 0px;
+		}
+		to {
+			background-position: 20px 0px;
+		}
+	}
+}
+.clear {
+	transition: 0.5s;
+	opacity: 0;
+	&2 {
+		display: none;
+	}
+}

@@ -1,0 +1,25 @@
+$wpc: 1200px;
+$tb: 900px;
+$htb: 599px;
+$sp: 425px;
+
+@mixin wpc {
+	@media (min-width: ($wpc)) {
+		@content;
+	}
+}
+@mixin tb {
+	@media (max-width: ($tb)) {
+		@content;
+	}
+}
+@mixin htb {
+	@media (max-width: ($htb)) {
+		@content;
+	}
+}
+@mixin sp {
+	@media (max-width: ($sp)) {
+		@content;
+	}
+}

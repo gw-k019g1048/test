@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>元素実験室</title>
+  <link rel="stylesheet" href="common/css/all.css">
+  <!--favicon-->
+  <link rel="icon" href="common/favicon.ico" id="favicon">
+  <link rel="apple-touch-icon" sizes="180x180" href="common/apple-touch-icon-180x180.png">
+  <!--font-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'bad5irr',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body class="topBody">
+  <header class="topHead">
+    <h1>
+      <a href="index.html">
+        <img src="common/img/main_logo.svg" alt="">
+      </a>
+    </h1>
+    <h3>
+      <img src="common/img/sub_title.svg" alt="">
+    </h3>
+  </header>
+  <nav class="chat">
+    <div class="Chara TC">
+      <div class="Chara-icon Ticon"></div>
+      <div class="Chara-voice left">
+        <p>私の実験室にようこそ！<br>気になる元素ちゃんを<br class="sp">クリックしてね</p>
+      </div>
+    </div>
+  </nav>
+  <main class="atom-area">
+    <ol>
+      <li>
+        <section class="elm">
+          <a href="hydrogen/index.html">
+            <h2 class="elmName">水素</h2>
+            <img class="elmChara" src="common/img/atom/hydrogen.png" alt="">
+            <abbr class="elmAb noMetal-gas" title="hydrogen">H</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="helium/index.html">
+            <h2 class="elmName">ヘリウム</h2>
+            <img class="elmChara" src="common/img/atom/helium.png" alt="">
+            <abbr class="elmAb noMetal-gas" title="helium">He</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--SP改行-->
+      <li>
+        <section class="elm">
+          <a href="lithium/index.html">
+            <h2 class="elmName">リチウム</h2>
+            <img class="elmChara" src="common/img/atom/lithium.png" alt="">
+            <abbr class="elmAb metal-solid" title="lithium">Li</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="carbon/index.html">
+            <h2 class="elmName">炭素</h2>
+            <img class="elmChara" src="common/img/atom/carbon.png" alt="">
+            <abbr class="elmAb noMetal-solid" title="carbon">C</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf pc">
+        <img src="common/img/bk_shelf.png" alt="shelf">
+      </div>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--PC改行-->
+      <li>
+        <section class="elm">
+          <a href="nitrogen/index.html">
+            <h2 class="elmName">窒素</h2>
+            <img class="elmChara" src="common/img/atom/nitrogen.png" alt="">
+            <abbr class="elmAb noMetal-solid" title="nitrogen">N</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="oxygen/index.html">
+            <h2 class="elmName">酸素</h2>
+            <img class="elmChara" src="common/img/atom/oxygen.png" alt="">
+            <abbr class="elmAb noMetal-gas" title="oxygen">O</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--SP改行-->
+      <li>
+        <section class="elm">
+          <a href="natrium/index.html">
+            <h2 class="elmName">ナトリウム</h2>
+            <img class="elmChara" src="common/img/atom/natrium_sodium.png" alt="">
+            <abbr class="elmAb metal-solid" title="natrium">Na</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="magnesium/index.html">
+            <h2 class="elmName">マグネシウム</h2>
+            <img class="elmChara" src="common/img/atom/magnesium.png" alt="">
+            <abbr class="elmAb metal-solid" title="magnesium">Mg</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf cp">
+        <img src="common/img/bk_shelf.png" alt="shelf">
+      </div>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--PC改行-->
+      <li>
+        <section class="elm">
+          <a href="aluminium/index.html">
+            <h2 class="elmName">アルミニウム</h2>
+            <img class="elmChara" src="common/img/atom/aluminium.png" alt="">
+            <abbr class="elmAb metal-solid" title="aluminium">Al</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="silicon/index.html">
+            <h2 class="elmName">ケイ素</h2>
+            <img class="elmChara" src="common/img/atom/silicon.png" alt="">
+            <abbr class="elmAb noMetal-solid" title="silicon">Si</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--SP改行-->
+      <li>
+        <section class="elm">
+          <a href="sulfur/index.html">
+            <h2 class="elmName">硫黄</h2>
+            <img class="elmChara" src="common/img/atom/sulfur.png" alt="">
+            <abbr class="elmAb noMetal-solid" title="sulfur">S</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="chlorine/index.html">
+            <h2 class="elmName">塩素</h2>
+            <img class="elmChara" src="common/img/atom/chlorine.png" alt="">
+            <abbr class="elmAb noMetal-gas" title="chlorine">Cl</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf pc">
+        <img src="common/img/bk_shelf.png" alt="shelf">
+      </div>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--PC改行-->
+      <li>
+        <section class="elm">
+          <a href="kalium/index.html">
+            <h2 class="elmName">カリウム</h2>
+            <img class="elmChara" src="common/img/atom/kalium_potassium.png" alt="">
+            <abbr class="elmAb metal-solid" title="kalium">K</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="calcium/index.html">
+            <h2 class="elmName">カルシウム</h2>
+            <img class="elmChara" src="common/img/atom/calcium.png" alt="">
+            <abbr class="elmAb metal-solid" title="calcium">Ca</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--SP改行-->
+      <li>
+        <section class="elm">
+          <a href="ferrum/index.html">
+            <h2 class="elmName">鉄</h2>
+            <img class="elmChara" src="common/img/atom/ferrum_iron.png" alt="">
+            <abbr class="elmAb metal-solid" title="ferrum">Fe</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="cuprum/index.html">
+            <h2 class="elmName">銅</h2>
+            <img class="elmChara" src="common/img/atom/cuprum_copper.png" alt="">
+            <abbr class="elmAb metal-solid" title="cuprum">Cu</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf pc">
+        <img src="common/img/bk_shelf.png" alt="shelf">
+      </div>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--PC改行-->
+      <li>
+        <section class="elm">
+          <a href="zinc/index.html">
+            <h2 class="elmName">亜鉛</h2>
+            <img class="elmChara" src="common/img/atom/zinc.png" alt="">
+            <abbr class="elmAb metal-solid" title="zinc">Zn</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm">
+          <a href="argyros/index.html">
+            <h2 class="elmName">銀</h2>
+            <img class="elmChara" src="common/img/atom/argyros_silver.png" alt="">
+            <abbr class="elmAb metal-solid" title="argyros">Ag</abbr>
+          </a>
+        </section>
+      </li>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+      <!--SP改行-->
+      <li>
+        <section class="elm">
+          <a href="aurum/index.html">
+            <h2 class="elmName">金</h2>
+            <img class="elmChara" src="common/img/atom/aurum_gold.png" alt="">
+            <abbr class="elmAb metal-solid" title="aurum">Au</abbr>
+          </a>
+        </section>
+      </li>
+      <li>
+        <section class="elm endBox">
+          <!--調整用BOX-->
+        </section>
+      </li>
+      <div class="shelf pc">
+        <img src="common/img/bk_shelf.png" alt="shelf">
+      </div>
+      <div class="shelf sp">
+        <img src="common/img/bk_shelf_min.png" alt="shelf">
+      </div>
+    </ol>
+  </main>
+  <footer class="elementBtm">
+    <div class="elementBtmFlx">
+      <h1 class="footLogo">
+        <a href="index.html">
+          <img src="common/img/logo_min.svg" alt="">
+        </a>
+      </h1>
+      <div class="footElement">
+        <nav>
+          <h3>元素記号から探す</h3>
+          <ol class="ESE">
+            <li>
+              <a href="hydrogen/index.html">H</a>
+            </li>
+            <li>
+              <a href="helium/index.html">He</a>
+            </li>
+            <li>
+              <a href="lithium/index.html">Li</a>
+            </li>
+            <li>
+              <a href="carbon/index.html">C</a>
+            </li>
+            <li>
+              <a href="nitrogen/index.html">N</a>
+            </li>
+            <li>
+              <a href="oxygen/index.html">O</a>
+            </li>
+            <li>
+              <a href="natrium/index.html">Na</a>
+            </li>
+            <li>
+              <a href="magnesium/index.html">Mg</a>
+            </li>
+            <li>
+              <a href="aluminium/index.html">Al</a>
+            </li>
+            <li>
+              <a href="silicon/index.html">Si</a>
+            </li>
+            <li>
+              <a href="sulfur/index.html">S</a>
+            </li>
+            <li>
+              <a href="chlorine/index.html">Cl</a>
+            </li>
+            <li>
+              <a href="kalium/index.html">K</a>
+            </li>
+            <li>
+              <a href="calcium/index.html">Ca</a>
+            </li>
+            <li>
+              <a href="ferrum/index.html">Fe</a>
+            </li>
+            <li>
+              <a href="cuprum/index.html">Cu</a>
+            </li>
+            <li>
+              <a href="zinc/index.html">Zn</a>
+            </li>
+            <li>
+              <a href="argyros/index.html">Ag</a>
+            </li>
+            <li>
+              <a href="aurum/index.html">Au</a>
+            </li>
+          </ol>
+        </nav>
+        <nav>
+          <h3>元素名から探す</h3>
+          <ol class="ENE">
+            <li>
+              <a href="hydrogen/index.html">水素</a>
+            </li>
+            <li>
+              <a href="helium/index.html">ヘリウム</a>
+            </li>
+            <li>
+              <a href="lithium/index.html">リチウム</a>
+            </li>
+            <li>
+              <a href="carbon/index.html">炭素</a>
+            </li>
+            <li>
+              <a href="nitrogen/index.html">窒素</a>
+            </li>
+            <li>
+              <a href="oxygen/index.html">酸素</a>
+            </li>
+            <li class="over">
+              <a href="natrium/index.html">ナトリウム</a>
+            </li>
+            <li class="over">
+              <a href="magnesium/index.html">マグネシウム</a>
+            </li>
+            <li class="over">
+              <a href="aluminium/index.html">アルミニウム</a>
+            </li>
+            <li>
+              <a href="silicon/index.html">ケイ素</a>
+            </li>
+            <li>
+              <a href="sulfur/index.html">硫黄</a>
+            </li>
+            <li>
+              <a href="chlorine/index.html">塩素</a>
+            </li>
+            <li>
+              <a href="kalium/index.html">カリウム</a>
+            </li>
+            <li class="over">
+              <a href="calcium/index.html">カルシウム</a>
+            </li>
+            <li>
+              <a href="ferrum/index.html">鉄</a>
+            </li>
+            <li>
+              <a href="cuprum/index.html">銅</a>
+            </li>
+            <li>
+              <a href="zinc/index.html">亜鉛</a>
+            </li>
+            <li>
+              <a href="argyros/index.html">銀</a>
+            </li>
+            <li>
+              <a href="aurum/index.html">金</a>
+            </li>
+          </ol>
+
+        </nav>
+      </div>
+    </div>
+    <small>© GensoJikkenshitsu Co. Ltd. 2021</small>
+  </footer>
+</body>
+
+</html>

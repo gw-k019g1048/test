@@ -1,0 +1,460 @@
+@use "responsive" as m;
+
+@include m.tb {
+	.pc {
+		display: none;
+	}
+	.sp {
+		display: block;
+	}
+}
+/*topページ*/
+.topBody {
+	background-color: #e7eff2;
+	background-image: linear-gradient(-90deg, #f7f7f7 50%, transparent 50%);
+	background-size: 90px 90px;
+	background-position: center;
+}
+.topHead {
+	text-align: center;
+	h1 {
+		width: 40%;
+		margin: auto;
+		img {
+			width: 100%;
+		}
+		@include m.tb {
+			width: 60%;
+		}
+		@include m.sp {
+			width: 80%;
+		}
+	}
+	h3 {
+		width: 60%;
+		margin: auto;
+		margin-top: -15px;
+		img {
+			width: 100%;
+		}
+		@include m.tb {
+			width: 80%;
+		}
+		@include m.sp {
+			width: 95%;
+		}
+	}
+}
+.atom-area {
+	ol {
+		width: 90%;
+		max-width: 980px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include m.tb {
+			width: 480px;
+			justify-content: space-evenly;
+			.shelf {
+				margin-top: -3%;
+			}
+		}
+		@include m.htb {
+			width: 80%;
+		}
+		@include m.sp {
+			width: 95%;
+		}
+		li {
+			width: 20%;
+			max-width: 220px;
+			min-width: 160px;
+			padding: 5px;
+			margin-top: 30px;
+			@include m.sp {
+				min-width: 120px;
+			}
+			.elm {
+				text-align: center;
+				position: relative;
+				&Chara {
+					width: 100%;
+					transition: all 0.3s;
+					&:hover {
+						transform: scale(1.15, 1.15);
+					}
+				}
+				&Ab {
+					position: absolute;
+					bottom: -25px;
+					left: 50%;
+					transform: translate(-50%, 0%);
+				}
+			}
+		}
+		.shelf {
+			width: 100%;
+			margin-top: -2%;
+			@include m.tb {
+				margin-top: -4%;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.elementBtm {
+	margin-top: 20px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #4d4d4d;
+	&Flx {
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+		@include m.tb {
+			display: grid;
+			justify-items: center;
+		}
+		h1 {
+			margin-top: 10px;
+			a {
+				img {
+					width: 100%;
+				}
+			}
+			@include m.sp {
+				width: 200px;
+			}
+		}
+		.footElement {
+			width: 60%;
+			max-width: 500px;
+			margin-left: 40px;
+			@include m.tb {
+				width: 80%;
+				margin-left: 0;
+			}
+			nav {
+				margin-bottom: 20px;
+				h3 {
+					font-family: vdl-megamaru, sans-serif;
+					color: #fff;
+					text-align: left;
+					font-weight: normal;
+				}
+				ol {
+					display: flex;
+					flex-wrap: wrap;
+					list-style-type: none;
+					@include m.tb {
+						justify-content: space-between;
+						&::after {
+							display: block;
+							content: "";
+							width: 50px;
+							margin: 4px;
+						}
+					}
+					&.ESE {
+						font-size: 22px;
+					}
+					&.ENE {
+						font-size: 18px;
+						line-height: 1;
+						.over {
+							font-size: 16px;
+						}
+					}
+					li {
+						list-style-type: none;
+						margin: 4px;
+						a {
+							width: 50px;
+							height: 50px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							border: solid 1px #fff;
+							border-radius: 5px;
+							color: #fff;
+							font-family: vdl-megamaru, sans-serif;
+							transition: all 0.3s;
+							position: relative;
+							z-index: 1;
+
+							@include m.tb {
+								margin: 1% 2.2%;
+							}
+							&::after {
+								background-color: #fff;
+								position: absolute;
+								content: "";
+								width: 0;
+								height: 100%;
+								top: 0;
+								right: 0;
+								z-index: -1;
+								transition: all 0.3s;
+							}
+							&:hover {
+								color: #4d4d4d;
+							}
+							&:hover:after {
+								left: 0;
+								width: 100%;
+							}
+							&:active {
+								top: 2px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	small {
+		color: #fff;
+	}
+}
+/*下層ページ*/
+.elementTop {
+	width: 25%;
+	height: 10%;
+	margin-left: 60px;
+	z-index: 9999;
+	position: absolute;
+	@include m.tb {
+		width: 280px;
+		height: 60px;
+		margin-left: 30px;
+	}
+	a {
+		h1 {
+			width: 300px;
+			height: 60px;
+			text-align: center;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #4d4d4d;
+			border-radius: 5px;
+			img {
+				height: 70%;
+			}
+		}
+	}
+	@include m.sp {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		a {
+			h1 {
+				width: 270px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.atom_main {
+	//height: 95vh;
+	padding-top: 5vh;
+	@include m.tb {
+		position: static;
+		height: auto;
+		padding-top: 40px;
+	}
+	.scroll {
+		position: relative;
+		width: 80%;
+		max-width: 1200px;
+		height: auto;
+		margin: 2vh auto;
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 70%;
+		}
+		@include m.tb {
+			position: static;
+			width: 100%;
+			height: auto;
+			&:before {
+				display: none;
+			}
+		}
+	}
+	.allContent {
+		position: absolute;
+		top: 0;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		.intro {
+			text-align: center;
+			padding-bottom: 5%;
+			height: 80vh;
+			max-height: 560px;
+			min-height: 520px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: stretch;
+			@include m.wpc {
+				max-height: 100%;
+			}
+			.content {
+				text-align: left;
+				.exp {
+					.number {
+						margin-bottom: -10px;
+					}
+					h2 {
+						display: inline;
+						ruby {
+							rt {
+								font-size: 30%;
+							}
+						}
+					}
+					.elName {
+						display: inline;
+						@include m.tb {
+							display: block;
+							margin-top: -20px;
+						}
+					}
+					.subTitle {
+						margin-top: -20px;
+						@include m.tb {
+							margin: 0;
+						}
+					}
+				}
+				&.ct {
+					justify-content: center;
+					@include m.tb {
+						justify-content: space-evenly;
+					}
+				}
+			}
+		}
+		@include m.tb {
+			position: static;
+			width: 100%;
+			height: 100%;
+			transform: none;
+			top: auto;
+			left: auto;
+			.intro {
+				padding: 40px 0;
+				height: auto;
+				min-height: auto;
+			}
+		}
+	}
+}
+.icon {
+	&-box {
+		display: flex;
+		&-min {
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+			margin: 5px;
+			border-radius: 10px;
+			/**/
+			.Btype {
+				font-size: 1.8em;
+			}
+			&.BG {
+				.nLine {
+					font-size: 1.6em;
+					line-height: 80%;
+					span {
+						margin-left: 6px;
+						writing-mode: vertical-rl;
+					}
+				}
+			}
+		}
+	}
+}
+/*下層コラム*/
+.column {
+	margin: 10px 6vw 40px;
+	text-align: left;
+	.chat {
+		.Chara {
+			display: flex;
+		}
+	}
+}
+
+@include m.tb {
+	.atom_main {
+		.elementItem {
+			background-color: #fff;
+			box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.1);
+			padding: 20px 25px;
+			margin: 15px 3%;
+			background-image: url(../img/bk_line.png);
+			background-size: 90%;
+			background-position: top 20px left 50%;
+			background-repeat: repeat-y;
+		}
+	}
+	.icon {
+		&.sp {
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			.icon-box {
+				&-min {
+					text-align: center;
+					width: 100px;
+					height: 100px;
+					padding: 10px;
+					margin: 5px;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+	.imgInBox {
+		width: 160px;
+		margin: auto;
+	}
+	.column {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.icon {
+		&.sp {
+			max-width: 300px;
+			margin: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.imgInBox {
+		width: 140px;
+		margin: auto;
+	}
+}
