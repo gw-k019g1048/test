@@ -199,9 +199,16 @@
 								right: 0;
 								z-index: -1;
 								transition: all 0.3s;
+								@include m.tb {
+									background-color: #4d4d4d;
+									border-radius: 5px;
+								}
 							}
 							&:hover {
 								color: #4d4d4d;
+								@include m.tb {
+									color: #fff;
+								}
 							}
 							&:hover:after {
 								left: 0;
@@ -304,6 +311,7 @@
 		}
 		.intro {
 			text-align: center;
+			padding-top: 2%;
 			padding-bottom: 5%;
 			height: 80vh;
 			max-height: 560px;

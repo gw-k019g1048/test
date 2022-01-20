@@ -154,7 +154,17 @@
 		}
 	}
 }
-
+.sr {
+	@include m.tb {
+		display: none !important;
+	}
+}
+span {
+	&.sr {
+		margin-top: 5%;
+		line-height: 1;
+	}
+}
 /*2nd section*/
 .column {
 	&Ttl {
@@ -179,7 +189,7 @@
 			font-size: 1.6em;
 		}
 		@include m.sp {
-			font-size: 1.2em;
+			font-size: 22px;
 		}
 	}
 	&Exp {
@@ -190,13 +200,6 @@
 		}
 		@include m.sp {
 			font-size: 1em;
-		}
-	}
-	&2 {
-		span {
-			@include m.sp {
-				font-size: 14px;
-			}
 		}
 	}
 }
