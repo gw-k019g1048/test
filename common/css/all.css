@@ -233,6 +233,9 @@
   position: relative;
   z-index: 1;
 }
+.elementBtmFlx .footElement nav ol li a span {
+  position: relative;
+}
 @media (max-width: 900px) {
   .elementBtmFlx .footElement nav ol li a {
     margin: 1% 2.2%;

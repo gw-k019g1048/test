@@ -186,6 +186,10 @@
 							position: relative;
 							z-index: 1;
 
+							span {
+								position: relative;
+							}
+
 							@include m.tb {
 								margin: 1% 2.2%;
 							}
