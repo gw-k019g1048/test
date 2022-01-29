@@ -284,7 +284,7 @@
 	.scroll {
 		position: relative;
 		width: 80%;
-		max-width: 1200px;
+		max-width: 1350px;
 		height: auto;
 		margin: 2vh auto;
 		&:before {
@@ -329,6 +329,7 @@
 			}
 			.content {
 				text-align: left;
+				align-items: center;
 				.exp {
 					.number {
 						margin-bottom: -10px;
@@ -442,6 +443,19 @@
 					padding: 10px;
 					margin: 5px;
 					border-radius: 10px;
+					@include m.msp {
+						width: 80px;
+						height: 80px;
+						dt {
+							font-size: 12px;
+						}
+						.Btype {
+							font-size: 24px;
+							&.nLine {
+								font-size: 20px;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -461,12 +475,5 @@
 			max-width: 300px;
 			margin: auto;
 		}
-	}
-}
-
-@media screen and (max-width: 425px) {
-	.imgInBox {
-		width: 140px;
-		margin: auto;
 	}
 }

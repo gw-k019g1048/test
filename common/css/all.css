@@ -333,7 +333,7 @@
 .atom_main .scroll {
   position: relative;
   width: 80%;
-  max-width: 1200px;
+  max-width: 1350px;
   height: auto;
   margin: 2vh auto;
 }
@@ -384,6 +384,7 @@
 }
 .atom_main .allContent .intro .content {
   text-align: left;
+  align-items: center;
 }
 .atom_main .allContent .intro .content .exp .number {
   margin-bottom: -10px;
@@ -494,12 +495,29 @@
     margin: 5px;
     border-radius: 10px;
   }
-
+}
+@media (max-width: 900px) and (max-width: 320px) {
+  .icon.sp .icon-box-min {
+    width: 80px;
+    height: 80px;
+  }
+  .icon.sp .icon-box-min dt {
+    font-size: 12px;
+  }
+  .icon.sp .icon-box-min .Btype {
+    font-size: 24px;
+  }
+  .icon.sp .icon-box-min .Btype.nLine {
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
   .imgInBox {
     width: 160px;
     margin: auto;
   }
-
+}
+@media (max-width: 900px) {
   .column {
     height: auto;
   }
@@ -507,12 +525,6 @@
 @media screen and (max-width: 599px) {
   .icon.sp {
     max-width: 300px;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 425px) {
-  .imgInBox {
-    width: 140px;
     margin: auto;
   }
 }
@@ -615,17 +627,22 @@
 }
 @media (max-width: 900px) {
   .exp h2 {
-    font-size: 3.4em;
+    font-size: 64px;
   }
 }
 @media (max-width: 599px) {
   .exp h2 {
-    font-size: 2.6em;
+    font-size: 56px;
   }
 }
 @media (max-width: 425px) {
   .exp h2 {
-    font-size: 1.8em;
+    font-size: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .exp h2 {
+    font-size: 24px;
   }
 }
 .exp .subTitle {
@@ -640,6 +657,11 @@
 @media (max-width: 425px) {
   .exp .subTitle {
     font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .exp .subTitle {
+    font-size: 12px;
   }
 }
 
@@ -679,9 +701,29 @@
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1200px) {
+  .imgInBox {
+    max-height: 600px;
+  }
+}
+@media (max-width: 425px) {
+  .imgInBox {
+    width: 120px;
+  }
+}
+@media (max-width: 320px) {
+  .imgInBox {
+    width: 100px;
+  }
+}
 .imgInBox img {
   height: 100%;
   max-height: 400px;
+}
+@media (min-width: 1200px) {
+  .imgInBox img {
+    max-height: 600px;
+  }
 }
 @media (max-width: 599px) {
   .imgInBox img {
@@ -731,6 +773,11 @@ span.sr {
     font-size: 22px;
   }
 }
+@media (max-width: 320px) {
+  .columnTtl {
+    font-size: 18px;
+  }
+}
 .columnExp {
   font-size: 1.4em;
   font-weight: normal;
@@ -743,6 +790,11 @@ span.sr {
 @media (max-width: 425px) {
   .columnExp {
     font-size: 1em;
+  }
+}
+@media (max-width: 320px) {
+  .columnExp {
+    font-size: 12px;
   }
 }
 
@@ -765,8 +817,8 @@ span.sr {
 }
 @media (max-width: 425px) {
   .chat .Chara-icon {
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     margin: 0;
   }
 }
@@ -797,6 +849,7 @@ span.sr {
 }
 .chat .Chara-icon.Eicon-natrium {
   background-image: url(../img/atom/natrium_sodium.png);
+  background-position: top -10px left 45%;
 }
 .chat .Chara-icon.Eicon-magnesium {
   background-image: url(../img/atom/magnesium.png);
@@ -804,7 +857,7 @@ span.sr {
 }
 .chat .Chara-icon.Eicon-aluminium {
   background-image: url(../img/atom/aluminium.png);
-  background-position: top -15px left 50%;
+  background-position: top -10px left 50%;
 }
 .chat .Chara-icon.Eicon-sulfur {
   background-image: url(../img/atom/sulfur.png);
@@ -812,7 +865,7 @@ span.sr {
 }
 .chat .Chara-icon.Eicon-silicon {
   background-image: url(../img/atom/silicon.png);
-  background-position: top -15px left 40%;
+  background-position: top -10px left 45%;
 }
 .chat .Chara-icon.Eicon-chlorine {
   background-image: url(../img/atom/chlorine.png);
@@ -870,6 +923,11 @@ span.sr {
     margin: 10px 20px;
     padding: 10px;
     font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .chat .Chara-voice {
+    font-size: 12px;
   }
 }
 .chat .Chara-voice.left::before {

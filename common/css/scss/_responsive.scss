@@ -2,6 +2,7 @@ $wpc: 1200px;
 $tb: 900px;
 $htb: 599px;
 $sp: 425px;
+$msp: 320px;
 
 @mixin wpc {
 	@media (min-width: ($wpc)) {
@@ -20,6 +21,11 @@ $sp: 425px;
 }
 @mixin sp {
 	@media (max-width: ($sp)) {
+		@content;
+	}
+}
+@mixin msp {
+	@media (max-width: ($msp)) {
 		@content;
 	}
 }
